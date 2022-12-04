@@ -1,0 +1,14 @@
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.exe
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.deps.json
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.runtimeconfig.json
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.runtimeconfig.dev.json
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.dll
+D:\Work\VS\Advent\bin\Debug\netcoreapp3.1\Advent.pdb
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.csproj.AssemblyReference.cache
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.AssemblyInfoInputs.cache
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.AssemblyInfo.cs
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.csproj.CoreCompileInputs.cache
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.dll
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.pdb
+D:\Work\VS\Advent\obj\Debug\netcoreapp3.1\Advent.genruntimeconfig.cache
