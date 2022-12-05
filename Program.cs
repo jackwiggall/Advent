@@ -130,46 +130,51 @@ namespace Advent
                 int stackto = Int32.Parse(strlist[5]); //2
 
                 //Console.WriteLine(line);
-                for (int i = 0; i < amount; i++)
+                    object[] val = { "" };
+                for (int i = 0; i < amount; i++) //get values to move
                 {
-                    object val = "";
+                    Array.Resize(ref val, val.Length + 1);
                     if (one.Count > 0 && stackfrom == 1)
-                        {val = one.Pop();}
-                    if (two.Count > 0 && stackfrom == 2)
-                        {val = two.Pop();}
-                    if (three.Count > 0 && stackfrom == 3)
-                        {val = three.Pop();}
-                    if (four.Count > 0 && stackfrom == 4)
-                        {val = four.Pop();}
-                    if (five.Count > 0 && stackfrom == 5)
-                        {val = five.Pop();}
-                    if (six.Count > 0 && stackfrom == 6)
-                        {val = six.Pop();}
-                    if (seven.Count > 0 && stackfrom == 7)
-                        {val = seven.Pop();}
-                    if (eight.Count > 0 && stackfrom == 8)
-                        {val = eight.Pop();}
-                    if (nine.Count > 0 && stackfrom == 9)
-                        {val=nine.Pop();}
-
+                    { val[i] = one.Pop(); }
+                    else if (two.Count > 0 && stackfrom == 2)
+                    { val[i] = two.Pop(); }
+                    else if (three.Count > 0 && stackfrom == 3)
+                    { val[i] = three.Pop(); }
+                    else if (four.Count > 0 && stackfrom == 4)
+                    { val[i] = four.Pop(); }
+                    else if (five.Count > 0 && stackfrom == 5)
+                    { val[i] = five.Pop(); }
+                    else if (six.Count > 0 && stackfrom == 6)
+                    { val[i] = six.Pop(); }
+                    else if (seven.Count > 0 && stackfrom == 7)
+                    { val[i] = seven.Pop(); }
+                    else if (eight.Count > 0 && stackfrom == 8)
+                    { val[i] = eight.Pop(); }
+                    else if (nine.Count > 0 && stackfrom == 9)
+                    { val[i] = nine.Pop(); }
+                    else {
+                        break;
+                    }
+                } //move them
+                for (int i = amount-1; i > -1; i--)  {
                     if (stackto == 1)
-                        {one.Push(val);}
-                    if (stackto == 2)
-                        {two.Push(val);}
-                    if (stackto == 3)
-                        {three.Push(val);}
-                    if (stackto == 4)
-                        {four.Push(val);}
-                    if (stackto == 5)
-                        {five.Push(val);}
-                    if (stackto == 6)
-                        {six.Push(val);}
-                    if (stackto == 7)
-                        {seven.Push(val);}
-                    if (stackto == 8)
-                        {eight.Push(val);}
-                    if (stackto == 9)
-                        {nine.Push(val);}
+                        {one.Push(val[i]);}
+                    else if (stackto == 2)
+                        {two.Push(val[i]);}
+                    else if (stackto == 3)
+                        {three.Push(val[i]);}
+                    else if (stackto == 4)
+                        {four.Push(val[i]);}
+                    else if (stackto == 5)
+                        {five.Push(val[i]);}
+                    else if (stackto == 6)
+                        {six.Push(val[i]);}
+                    else if (stackto == 7)
+                        {seven.Push(val[i]);}
+                    else if (stackto == 8)
+                        {eight.Push(val[i]);}
+                    else if (stackto == 9)
+                        {nine.Push(val[i]);}
                 }
 
 
@@ -177,7 +182,8 @@ namespace Advent
 
                 Console.WriteLine("Total Elements are: " + one.Count +" "+ two.Count +" "+ three.Count + " " + four.Count + " " + five.Count + " " + six.Count + " " + seven.Count + " " + eight.Count + " " + nine.Count);
             Console.WriteLine("Top Elements are: " + one.Peek() + two.Peek() + three.Peek() + four.Peek() + five.Peek() + six.Peek() + seven.Peek() + eight.Peek() + nine.Peek());
-        }//RFFFWBPNS
+        }//RFFFWBPNS p1
+        //CQQBBJFCS p2
     }
 }
 
